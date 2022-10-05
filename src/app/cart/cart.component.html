@@ -1,7 +1,9 @@
 <h3>Cart</h3>
+<!-- routing for shipping component -->
 <p>
 <a routerLink="/shipping">Shipping Prices</a>
 </p>
+<!-- items to be shown in cart after BUY -->
 <div class="cart-item" *ngFor="let item of items">
   <span>{{ item.name }}</span>
   <span>{{ item.price | currency }}</span>
