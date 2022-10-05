@@ -8,13 +8,15 @@ import { products } from '../products';
   styleUrls: ['./product-list.component.css'],
 })
 export class ProductListComponent {
+  //array imported from product service for using in ng template in html
   products = products;
 
+  //share button alert
   share() {
     window.alert('The product has been shared!');
   }
-  onNotify()
-  {
+  //notify button alert
+  onNotify() {
     window.alert('You will be notified when the product goes on sale');
   }
 }

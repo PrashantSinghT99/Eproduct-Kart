@@ -12,7 +12,7 @@ export class ShippingComponent implements OnInit {
 
   constructor(private cartService:CartService) { }
 
-// calling this function from cartService to get shipping prices
+// calling getShippingPrices function from cartService to get shipping prices
 
   ngOnInit(): void {
 
