@@ -1,10 +1,25 @@
 <h3>Cart</h3>
 <!-- routing for shipping component -->
 <p>
-<a routerLink="/shipping">Shipping Prices</a>
+  <a routerLink="/shipping">Shipping Prices</a>
 </p>
 <!-- items to be shown in cart after BUY -->
 <div class="cart-item" *ngFor="let item of items">
   <span>{{ item.name }}</span>
   <span>{{ item.price | currency }}</span>
 </div>
+
+<form [formGroup]="checkoutForm" (ngSubmit)="onSubmit()">
+  <div>
+    <label for="name"> Name </label>
+    <input id="name" type="text" formControlName="name" />
+  </div>
+
+  <div>
+    <label for="address"> Address </label>
+    <input id="address" type="text" formControlName="address" />
+  </div>
+  <button class="button" type="submit" (click)="onclickPurchase()">
+    Purchase
+  </button>
+</form>
