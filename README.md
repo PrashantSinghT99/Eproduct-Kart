@@ -1,6 +1,6 @@
 # Eproduct-Kart
 
-Project from angular.io
+Project of angular.io
 
 Copyright Google LLC. All Rights Reserved.
 
